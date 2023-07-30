@@ -1,0 +1,19 @@
+<form
+  id="assign-form"
+  action="/user/<%= userReadUpdate.id %>/push-reviews"
+  method="post"
+>
+  <a class="btn" id="assign-close">Close</a>
+  <h3>Select Employees</h3>
+  <% if(revieweeList.length>0){%> <%for(let reviewee of revieweeList){%>
+  <%if(reviewee.userType=='employee'){%>
+  <label class="container"
+    ><%=reviewee.name%>
+    <input name="asign" type="checkbox" defaultValue="<%= reviewee.id%>" />
+    <span class="checkmark"></span>
+  </label>
+
+  <%}%> <%}%>
+  <button type="submit">Submit</button>
+  <%}%>
+</form>

@@ -1,0 +1,39 @@
+# routes for ******  HOME page ****
+###
+GET http://localhost:8000/admin HTTP/1.1
+###
+GET http://localhost:8000/admin/615556a28bfd9cc2064ee844 HTTP/1.1
+### 
+GET http://localhost:8000/employee HTTP/1.1
+
+### ****************      USER  **********
+
+### link to create first admin 
+get http://localhost:8000/user/ajeet HTTP/1.1
+
+### sign in sign up form will appear here toggle by js. 
+get http://localhost:8000/ HTTP/1.1
+
+###NOTICE:change data for user
+
+userType=admin
+&name=Ajeet Singh
+&email=ajeetsingh8139@gmail.com
+&password=ajeet@123
+&confirmPassword=ajeet@123
+&department=Production
+
+### SIGN--OUT
+get http://localhost:8000/user/session/destroy HTTP/1.1
+
+### deelte the user NOTICE:change id.
+DELETE http://localhost:8000/user/61542100d461552831866c09/delete HTTP/1.1
+
+
+
+### ****************      PERFORMANCE     **********
+
+
+### delete the performance NOTICE:change id.
+DELETE http://localhost:8000/performance/:id/delete HTTP/1.1
+
