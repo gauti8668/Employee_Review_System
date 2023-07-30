@@ -9,7 +9,7 @@ GET http://localhost:8000/employee HTTP/1.1
 ### ****************      USER  **********
 
 ### link to create first admin 
-get http://localhost:8000/user/ajeet HTTP/1.1
+get http://localhost:8000/user/gautam HTTP/1.1
 
 ### sign in sign up form will appear here toggle by js. 
 get http://localhost:8000/ HTTP/1.1
@@ -17,11 +17,11 @@ get http://localhost:8000/ HTTP/1.1
 ###NOTICE:change data for user
 
 userType=admin
-&name=Ajeet Singh
-&email=ajeetsingh8139@gmail.com
-&password=ajeet@123
-&confirmPassword=ajeet@123
-&department=Production
+&name=Gautam Gupta
+&email=gautamgupta7704@gmail.com
+&password=gautam@123
+&confirmPassword=gautam@123
+&department=HR
 
 ### SIGN--OUT
 get http://localhost:8000/user/session/destroy HTTP/1.1
